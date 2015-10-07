@@ -7,34 +7,103 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		380880101BC35E1300C1A649 /* JKFeedbackProviderVersionInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 3808800F1BC35E1300C1A649 /* JKFeedbackProviderVersionInfo.m */; settings = {ASSET_TAGS = (); }; };
-		380880121BC36AF000C1A649 /* boiling.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 380880111BC36AF000C1A649 /* boiling.jpg */; settings = {ASSET_TAGS = (); }; };
-		38A812CB1BC3274000BB6A63 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 38A812CA1BC3274000BB6A63 /* main.m */; };
-		38A812CE1BC3274000BB6A63 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 38A812CD1BC3274000BB6A63 /* AppDelegate.m */; };
-		38A812D11BC3274000BB6A63 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38A812D01BC3274000BB6A63 /* ViewController.m */; };
-		38A812D41BC3274000BB6A63 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38A812D21BC3274000BB6A63 /* Main.storyboard */; };
-		38A812D61BC3274000BB6A63 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 38A812D51BC3274000BB6A63 /* Assets.xcassets */; };
-		38A812D91BC3274000BB6A63 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38A812D71BC3274000BB6A63 /* LaunchScreen.storyboard */; };
-		38A812E41BC3274000BB6A63 /* JKAppsFeedbackUIProviderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 38A812E31BC3274000BB6A63 /* JKAppsFeedbackUIProviderTests.m */; };
-		38A812EF1BC3274000BB6A63 /* JKAppsFeedbackUIProviderUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 38A812EE1BC3274000BB6A63 /* JKAppsFeedbackUIProviderUITests.m */; };
-		38A813051BC32A4A00BB6A63 /* JKAppsFeedbackProviderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38A813041BC32A4A00BB6A63 /* JKAppsFeedbackProviderViewController.m */; settings = {ASSET_TAGS = (); }; };
-		38A813081BC32CE400BB6A63 /* JKFeedbackProviderWebRequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 38A813071BC32CE400BB6A63 /* JKFeedbackProviderWebRequestManager.m */; settings = {ASSET_TAGS = (); }; };
-		38F8BA631BC47DE00043D3AC /* IMG_20150929_220147.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 38F8BA621BC47DE00043D3AC /* IMG_20150929_220147.jpg */; settings = {ASSET_TAGS = (); }; };
-		38F8BA6C1BC4B1BA0043D3AC /* JKFeedbackInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 38F8BA6B1BC4B1BA0043D3AC /* JKFeedbackInfo.m */; settings = {ASSET_TAGS = (); }; };
-		E0324471E7BF81CE8507A30B /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C88DADF98A6DBD42C38B351 /* libPods.a */; };
+		380880101BC35E1300C1A649 = {
+			isa = PBXBuildFile;
+			fileRef = 3808800F1BC35E1300C1A649;
+			settings = {
+				ASSET_TAGS = (
+				);
+			};
+		};
+		380880121BC36AF000C1A649 = {
+			isa = PBXBuildFile;
+			fileRef = 380880111BC36AF000C1A649;
+			settings = {
+				ASSET_TAGS = (
+				);
+			};
+		};
+		38A812CB1BC3274000BB6A63 = {
+			isa = PBXBuildFile;
+			fileRef = 38A812CA1BC3274000BB6A63;
+		};
+		38A812CE1BC3274000BB6A63 = {
+			isa = PBXBuildFile;
+			fileRef = 38A812CD1BC3274000BB6A63;
+		};
+		38A812D11BC3274000BB6A63 = {
+			isa = PBXBuildFile;
+			fileRef = 38A812D01BC3274000BB6A63;
+		};
+		38A812D41BC3274000BB6A63 = {
+			isa = PBXBuildFile;
+			fileRef = 38A812D21BC3274000BB6A63;
+		};
+		38A812D61BC3274000BB6A63 = {
+			isa = PBXBuildFile;
+			fileRef = 38A812D51BC3274000BB6A63;
+		};
+		38A812D91BC3274000BB6A63 = {
+			isa = PBXBuildFile;
+			fileRef = 38A812D71BC3274000BB6A63;
+		};
+		38A812E41BC3274000BB6A63 = {
+			isa = PBXBuildFile;
+			fileRef = 38A812E31BC3274000BB6A63;
+		};
+		38A812EF1BC3274000BB6A63 = {
+			isa = PBXBuildFile;
+			fileRef = 38A812EE1BC3274000BB6A63;
+		};
+		38A813051BC32A4A00BB6A63 = {
+			isa = PBXBuildFile;
+			fileRef = 38A813041BC32A4A00BB6A63;
+			settings = {
+				ASSET_TAGS = (
+				);
+			};
+		};
+		38A813081BC32CE400BB6A63 = {
+			isa = PBXBuildFile;
+			fileRef = 38A813071BC32CE400BB6A63;
+			settings = {
+				ASSET_TAGS = (
+				);
+			};
+		};
+		38F8BA631BC47DE00043D3AC = {
+			isa = PBXBuildFile;
+			fileRef = 38F8BA621BC47DE00043D3AC;
+			settings = {
+				ASSET_TAGS = (
+				);
+			};
+		};
+		38F8BA6C1BC4B1BA0043D3AC = {
+			isa = PBXBuildFile;
+			fileRef = 38F8BA6B1BC4B1BA0043D3AC;
+			settings = {
+				ASSET_TAGS = (
+				);
+			};
+		};
+		E0324471E7BF81CE8507A30B = {
+			isa = PBXBuildFile;
+			fileRef = 1C88DADF98A6DBD42C38B351;
+		};
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		38A812E01BC3274000BB6A63 /* PBXContainerItemProxy */ = {
+		38A812E01BC3274000BB6A63 = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 38A812BE1BC3274000BB6A63 /* Project object */;
+			containerPortal = 38A812BE1BC3274000BB6A63;
 			proxyType = 1;
 			remoteGlobalIDString = 38A812C51BC3274000BB6A63;
 			remoteInfo = JKAppsFeedbackUIProvider;
 		};
-		38A812EB1BC3274000BB6A63 /* PBXContainerItemProxy */ = {
+		38A812EB1BC3274000BB6A63 = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 38A812BE1BC3274000BB6A63 /* Project object */;
+			containerPortal = 38A812BE1BC3274000BB6A63;
 			proxyType = 1;
 			remoteGlobalIDString = 38A812C51BC3274000BB6A63;
 			remoteInfo = JKAppsFeedbackUIProvider;
@@ -42,54 +111,217 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1C88DADF98A6DBD42C38B351 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		3808800E1BC35E1300C1A649 /* JKFeedbackProviderVersionInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKFeedbackProviderVersionInfo.h; sourceTree = "<group>"; };
-		3808800F1BC35E1300C1A649 /* JKFeedbackProviderVersionInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKFeedbackProviderVersionInfo.m; sourceTree = "<group>"; };
-		380880111BC36AF000C1A649 /* boiling.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = boiling.jpg; sourceTree = "<group>"; };
-		38A812C61BC3274000BB6A63 /* JKAppsFeedbackUIProvider.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JKAppsFeedbackUIProvider.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		38A812CA1BC3274000BB6A63 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		38A812CC1BC3274000BB6A63 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		38A812CD1BC3274000BB6A63 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		38A812CF1BC3274000BB6A63 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		38A812D01BC3274000BB6A63 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		38A812D31BC3274000BB6A63 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		38A812D51BC3274000BB6A63 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		38A812D81BC3274000BB6A63 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		38A812DA1BC3274000BB6A63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		38A812DF1BC3274000BB6A63 /* JKAppsFeedbackUIProviderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JKAppsFeedbackUIProviderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		38A812E31BC3274000BB6A63 /* JKAppsFeedbackUIProviderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JKAppsFeedbackUIProviderTests.m; sourceTree = "<group>"; };
-		38A812E51BC3274000BB6A63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		38A812EA1BC3274000BB6A63 /* JKAppsFeedbackUIProviderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JKAppsFeedbackUIProviderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		38A812EE1BC3274000BB6A63 /* JKAppsFeedbackUIProviderUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JKAppsFeedbackUIProviderUITests.m; sourceTree = "<group>"; };
-		38A812F01BC3274000BB6A63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		38A813031BC32A4A00BB6A63 /* JKAppsFeedbackProviderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKAppsFeedbackProviderViewController.h; sourceTree = "<group>"; };
-		38A813041BC32A4A00BB6A63 /* JKAppsFeedbackProviderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKAppsFeedbackProviderViewController.m; sourceTree = "<group>"; };
-		38A813061BC32CE400BB6A63 /* JKFeedbackProviderWebRequestManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKFeedbackProviderWebRequestManager.h; sourceTree = "<group>"; };
-		38A813071BC32CE400BB6A63 /* JKFeedbackProviderWebRequestManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKFeedbackProviderWebRequestManager.m; sourceTree = "<group>"; };
-		38F8BA621BC47DE00043D3AC /* IMG_20150929_220147.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_20150929_220147.jpg; sourceTree = "<group>"; };
-		38F8BA6A1BC4B1BA0043D3AC /* JKFeedbackInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKFeedbackInfo.h; sourceTree = "<group>"; };
-		38F8BA6B1BC4B1BA0043D3AC /* JKFeedbackInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKFeedbackInfo.m; sourceTree = "<group>"; };
-		5C6DB05FE04C6A07A3D29718 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
-		EDF0DE00667FCF3362254FEF /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		1C88DADF98A6DBD42C38B351 = {
+			isa = PBXFileReference;
+			explicitFileType = archive.ar;
+			includeInIndex = 0;
+			path = libPods.a;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3808800E1BC35E1300C1A649 = {
+			isa = PBXFileReference;
+			fileEncoding = 4;
+			lastKnownFileType = sourcecode.c.h;
+			path = JKFeedbackProviderVersionInfo.h;
+			sourceTree = "<group>";
+		};
+		3808800F1BC35E1300C1A649 = {
+			isa = PBXFileReference;
+			fileEncoding = 4;
+			lastKnownFileType = sourcecode.c.objc;
+			path = JKFeedbackProviderVersionInfo.m;
+			sourceTree = "<group>";
+		};
+		380880111BC36AF000C1A649 = {
+			isa = PBXFileReference;
+			lastKnownFileType = image.jpeg;
+			path = boiling.jpg;
+			sourceTree = "<group>";
+		};
+		38A812C61BC3274000BB6A63 = {
+			isa = PBXFileReference;
+			explicitFileType = wrapper.application;
+			includeInIndex = 0;
+			path = JKAppsFeedbackUIProvider.app;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		38A812CA1BC3274000BB6A63 = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.objc;
+			path = main.m;
+			sourceTree = "<group>";
+		};
+		38A812CC1BC3274000BB6A63 = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			path = AppDelegate.h;
+			sourceTree = "<group>";
+		};
+		38A812CD1BC3274000BB6A63 = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.objc;
+			path = AppDelegate.m;
+			sourceTree = "<group>";
+		};
+		38A812CF1BC3274000BB6A63 = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.h;
+			path = ViewController.h;
+			sourceTree = "<group>";
+		};
+		38A812D01BC3274000BB6A63 = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.objc;
+			path = ViewController.m;
+			sourceTree = "<group>";
+		};
+		38A812D31BC3274000BB6A63 = {
+			isa = PBXFileReference;
+			lastKnownFileType = file.storyboard;
+			name = Base;
+			path = Base.lproj/Main.storyboard;
+			sourceTree = "<group>";
+		};
+		38A812D51BC3274000BB6A63 = {
+			isa = PBXFileReference;
+			lastKnownFileType = folder.assetcatalog;
+			path = Assets.xcassets;
+			sourceTree = "<group>";
+		};
+		38A812D81BC3274000BB6A63 = {
+			isa = PBXFileReference;
+			lastKnownFileType = file.storyboard;
+			name = Base;
+			path = Base.lproj/LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		38A812DA1BC3274000BB6A63 = {
+			isa = PBXFileReference;
+			lastKnownFileType = text.plist.xml;
+			path = Info.plist;
+			sourceTree = "<group>";
+		};
+		38A812DF1BC3274000BB6A63 = {
+			isa = PBXFileReference;
+			explicitFileType = wrapper.cfbundle;
+			includeInIndex = 0;
+			path = JKAppsFeedbackUIProviderTests.xctest;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		38A812E31BC3274000BB6A63 = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.objc;
+			path = JKAppsFeedbackUIProviderTests.m;
+			sourceTree = "<group>";
+		};
+		38A812E51BC3274000BB6A63 = {
+			isa = PBXFileReference;
+			lastKnownFileType = text.plist.xml;
+			path = Info.plist;
+			sourceTree = "<group>";
+		};
+		38A812EA1BC3274000BB6A63 = {
+			isa = PBXFileReference;
+			explicitFileType = wrapper.cfbundle;
+			includeInIndex = 0;
+			path = JKAppsFeedbackUIProviderUITests.xctest;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		38A812EE1BC3274000BB6A63 = {
+			isa = PBXFileReference;
+			lastKnownFileType = sourcecode.c.objc;
+			path = JKAppsFeedbackUIProviderUITests.m;
+			sourceTree = "<group>";
+		};
+		38A812F01BC3274000BB6A63 = {
+			isa = PBXFileReference;
+			lastKnownFileType = text.plist.xml;
+			path = Info.plist;
+			sourceTree = "<group>";
+		};
+		38A813031BC32A4A00BB6A63 = {
+			isa = PBXFileReference;
+			fileEncoding = 4;
+			lastKnownFileType = sourcecode.c.h;
+			path = JKAppsFeedbackProviderViewController.h;
+			sourceTree = "<group>";
+		};
+		38A813041BC32A4A00BB6A63 = {
+			isa = PBXFileReference;
+			fileEncoding = 4;
+			lastKnownFileType = sourcecode.c.objc;
+			path = JKAppsFeedbackProviderViewController.m;
+			sourceTree = "<group>";
+		};
+		38A813061BC32CE400BB6A63 = {
+			isa = PBXFileReference;
+			fileEncoding = 4;
+			lastKnownFileType = sourcecode.c.h;
+			path = JKFeedbackProviderWebRequestManager.h;
+			sourceTree = "<group>";
+		};
+		38A813071BC32CE400BB6A63 = {
+			isa = PBXFileReference;
+			fileEncoding = 4;
+			lastKnownFileType = sourcecode.c.objc;
+			path = JKFeedbackProviderWebRequestManager.m;
+			sourceTree = "<group>";
+		};
+		38F8BA621BC47DE00043D3AC = {
+			isa = PBXFileReference;
+			lastKnownFileType = image.jpeg;
+			path = IMG_20150929_220147.jpg;
+			sourceTree = "<group>";
+		};
+		38F8BA6A1BC4B1BA0043D3AC = {
+			isa = PBXFileReference;
+			fileEncoding = 4;
+			lastKnownFileType = sourcecode.c.h;
+			path = JKFeedbackInfo.h;
+			sourceTree = "<group>";
+		};
+		38F8BA6B1BC4B1BA0043D3AC = {
+			isa = PBXFileReference;
+			fileEncoding = 4;
+			lastKnownFileType = sourcecode.c.objc;
+			path = JKFeedbackInfo.m;
+			sourceTree = "<group>";
+		};
+		5C6DB05FE04C6A07A3D29718 = {
+			isa = PBXFileReference;
+			includeInIndex = 1;
+			lastKnownFileType = text.xcconfig;
+			name = Pods.release.xcconfig;
+			path = "Pods/Target Support Files/Pods/Pods.release.xcconfig";
+			sourceTree = "<group>";
+		};
+		EDF0DE00667FCF3362254FEF = {
+			isa = PBXFileReference;
+			includeInIndex = 1;
+			lastKnownFileType = text.xcconfig;
+			name = Pods.debug.xcconfig;
+			path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig";
+			sourceTree = "<group>";
+		};
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		38A812C31BC3274000BB6A63 /* Frameworks */ = {
+		38A812C31BC3274000BB6A63 = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E0324471E7BF81CE8507A30B /* libPods.a in Frameworks */,
+				E0324471E7BF81CE8507A30B,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		38A812DC1BC3274000BB6A63 /* Frameworks */ = {
+		38A812DC1BC3274000BB6A63 = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		38A812E71BC3274000BB6A63 /* Frameworks */ = {
+		38A812E71BC3274000BB6A63 = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -102,98 +334,100 @@
 		38A812BD1BC3274000BB6A63 = {
 			isa = PBXGroup;
 			children = (
-				38A812C81BC3274000BB6A63 /* JKAppsFeedbackUIProvider */,
-				38A812E21BC3274000BB6A63 /* JKAppsFeedbackUIProviderTests */,
-				38A812ED1BC3274000BB6A63 /* JKAppsFeedbackUIProviderUITests */,
-				38A812C71BC3274000BB6A63 /* Products */,
-				B853A8124F57C2594AB7435E /* Pods */,
-				ABA08BB8B3F3DF34397440ED /* Frameworks */,
+				ABA08BB8B3F3DF34397440ED,
+				38A812C81BC3274000BB6A63,
+				38A812E21BC3274000BB6A63,
+				38A812ED1BC3274000BB6A63,
+				B853A8124F57C2594AB7435E,
+				38A812C71BC3274000BB6A63,
 			);
 			sourceTree = "<group>";
 		};
-		38A812C71BC3274000BB6A63 /* Products */ = {
+		38A812C71BC3274000BB6A63 = {
 			isa = PBXGroup;
 			children = (
-				38A812C61BC3274000BB6A63 /* JKAppsFeedbackUIProvider.app */,
-				38A812DF1BC3274000BB6A63 /* JKAppsFeedbackUIProviderTests.xctest */,
-				38A812EA1BC3274000BB6A63 /* JKAppsFeedbackUIProviderUITests.xctest */,
+				38A812C61BC3274000BB6A63,
+				38A812DF1BC3274000BB6A63,
+				38A812EA1BC3274000BB6A63,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		38A812C81BC3274000BB6A63 /* JKAppsFeedbackUIProvider */ = {
+		38A812C81BC3274000BB6A63 = {
 			isa = PBXGroup;
 			children = (
-				38F8BA6D1BC4B4EE0043D3AC /* Classes */,
-				38F8BA621BC47DE00043D3AC /* IMG_20150929_220147.jpg */,
-				38A812CC1BC3274000BB6A63 /* AppDelegate.h */,
-				38A812CD1BC3274000BB6A63 /* AppDelegate.m */,
-				38A812CF1BC3274000BB6A63 /* ViewController.h */,
-				38A812D01BC3274000BB6A63 /* ViewController.m */,
-				38A812D21BC3274000BB6A63 /* Main.storyboard */,
-				380880111BC36AF000C1A649 /* boiling.jpg */,
-				38A812D51BC3274000BB6A63 /* Assets.xcassets */,
-				38A812D71BC3274000BB6A63 /* LaunchScreen.storyboard */,
-				38A812DA1BC3274000BB6A63 /* Info.plist */,
-				38A812C91BC3274000BB6A63 /* Supporting Files */,
+				38F8BA6D1BC4B4EE0043D3AC,
+				38A812C91BC3274000BB6A63,
+				38A812CC1BC3274000BB6A63,
+				38A812CD1BC3274000BB6A63,
+				38A812D51BC3274000BB6A63,
+				38F8BA621BC47DE00043D3AC,
+				38A812DA1BC3274000BB6A63,
+				38A812D71BC3274000BB6A63,
+				38A812D21BC3274000BB6A63,
+				38A812CF1BC3274000BB6A63,
+				38A812D01BC3274000BB6A63,
+				380880111BC36AF000C1A649,
 			);
 			path = JKAppsFeedbackUIProvider;
 			sourceTree = "<group>";
 		};
-		38A812C91BC3274000BB6A63 /* Supporting Files */ = {
+		38A812C91BC3274000BB6A63 = {
 			isa = PBXGroup;
 			children = (
-				38A812CA1BC3274000BB6A63 /* main.m */,
+				38A812CA1BC3274000BB6A63,
 			);
 			name = "Supporting Files";
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		38A812E21BC3274000BB6A63 /* JKAppsFeedbackUIProviderTests */ = {
+		38A812E21BC3274000BB6A63 = {
 			isa = PBXGroup;
 			children = (
-				38A812E31BC3274000BB6A63 /* JKAppsFeedbackUIProviderTests.m */,
-				38A812E51BC3274000BB6A63 /* Info.plist */,
+				38A812E51BC3274000BB6A63,
+				38A812E31BC3274000BB6A63,
 			);
 			path = JKAppsFeedbackUIProviderTests;
 			sourceTree = "<group>";
 		};
-		38A812ED1BC3274000BB6A63 /* JKAppsFeedbackUIProviderUITests */ = {
+		38A812ED1BC3274000BB6A63 = {
 			isa = PBXGroup;
 			children = (
-				38A812EE1BC3274000BB6A63 /* JKAppsFeedbackUIProviderUITests.m */,
-				38A812F01BC3274000BB6A63 /* Info.plist */,
+				38A812F01BC3274000BB6A63,
+				38A812EE1BC3274000BB6A63,
 			);
 			path = JKAppsFeedbackUIProviderUITests;
 			sourceTree = "<group>";
 		};
-		38F8BA6D1BC4B4EE0043D3AC /* Classes */ = {
+		38F8BA6D1BC4B4EE0043D3AC = {
 			isa = PBXGroup;
 			children = (
-				38F8BA6A1BC4B1BA0043D3AC /* JKFeedbackInfo.h */,
-				38F8BA6B1BC4B1BA0043D3AC /* JKFeedbackInfo.m */,
-				38A813031BC32A4A00BB6A63 /* JKAppsFeedbackProviderViewController.h */,
-				38A813041BC32A4A00BB6A63 /* JKAppsFeedbackProviderViewController.m */,
-				38A813061BC32CE400BB6A63 /* JKFeedbackProviderWebRequestManager.h */,
-				38A813071BC32CE400BB6A63 /* JKFeedbackProviderWebRequestManager.m */,
-				3808800E1BC35E1300C1A649 /* JKFeedbackProviderVersionInfo.h */,
-				3808800F1BC35E1300C1A649 /* JKFeedbackProviderVersionInfo.m */,
+				38A813031BC32A4A00BB6A63,
+				38A813041BC32A4A00BB6A63,
+				38F8BA6A1BC4B1BA0043D3AC,
+				38F8BA6B1BC4B1BA0043D3AC,
+				3808800E1BC35E1300C1A649,
+				3808800F1BC35E1300C1A649,
+				38A813061BC32CE400BB6A63,
+				38A813071BC32CE400BB6A63,
 			);
 			name = Classes;
+			path = Classes;
 			sourceTree = "<group>";
 		};
-		ABA08BB8B3F3DF34397440ED /* Frameworks */ = {
+		ABA08BB8B3F3DF34397440ED = {
 			isa = PBXGroup;
 			children = (
-				1C88DADF98A6DBD42C38B351 /* libPods.a */,
+				1C88DADF98A6DBD42C38B351,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		B853A8124F57C2594AB7435E /* Pods */ = {
+		B853A8124F57C2594AB7435E = {
 			isa = PBXGroup;
 			children = (
-				EDF0DE00667FCF3362254FEF /* Pods.debug.xcconfig */,
-				5C6DB05FE04C6A07A3D29718 /* Pods.release.xcconfig */,
+				EDF0DE00667FCF3362254FEF,
+				5C6DB05FE04C6A07A3D29718,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -201,15 +435,15 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		38A812C51BC3274000BB6A63 /* JKAppsFeedbackUIProvider */ = {
+		38A812C51BC3274000BB6A63 = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 38A812F31BC3274000BB6A63 /* Build configuration list for PBXNativeTarget "JKAppsFeedbackUIProvider" */;
+			buildConfigurationList = 38A812F31BC3274000BB6A63;
 			buildPhases = (
-				0B2BB42F3A01A849E4075930 /* Check Pods Manifest.lock */,
-				38A812C21BC3274000BB6A63 /* Sources */,
-				38A812C31BC3274000BB6A63 /* Frameworks */,
-				38A812C41BC3274000BB6A63 /* Resources */,
-				1683900DBDCD4DD4F49A678C /* Copy Pods Resources */,
+				0B2BB42F3A01A849E4075930,
+				38A812C21BC3274000BB6A63,
+				38A812C31BC3274000BB6A63,
+				38A812C41BC3274000BB6A63,
+				1683900DBDCD4DD4F49A678C,
 			);
 			buildRules = (
 			);
@@ -217,49 +451,49 @@
 			);
 			name = JKAppsFeedbackUIProvider;
 			productName = JKAppsFeedbackUIProvider;
-			productReference = 38A812C61BC3274000BB6A63 /* JKAppsFeedbackUIProvider.app */;
+			productReference = 38A812C61BC3274000BB6A63;
 			productType = "com.apple.product-type.application";
 		};
-		38A812DE1BC3274000BB6A63 /* JKAppsFeedbackUIProviderTests */ = {
+		38A812DE1BC3274000BB6A63 = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 38A812F61BC3274000BB6A63 /* Build configuration list for PBXNativeTarget "JKAppsFeedbackUIProviderTests" */;
+			buildConfigurationList = 38A812F61BC3274000BB6A63;
 			buildPhases = (
-				38A812DB1BC3274000BB6A63 /* Sources */,
-				38A812DC1BC3274000BB6A63 /* Frameworks */,
-				38A812DD1BC3274000BB6A63 /* Resources */,
+				38A812DB1BC3274000BB6A63,
+				38A812DC1BC3274000BB6A63,
+				38A812DD1BC3274000BB6A63,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				38A812E11BC3274000BB6A63 /* PBXTargetDependency */,
+				38A812E11BC3274000BB6A63,
 			);
 			name = JKAppsFeedbackUIProviderTests;
 			productName = JKAppsFeedbackUIProviderTests;
-			productReference = 38A812DF1BC3274000BB6A63 /* JKAppsFeedbackUIProviderTests.xctest */;
+			productReference = 38A812DF1BC3274000BB6A63;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		38A812E91BC3274000BB6A63 /* JKAppsFeedbackUIProviderUITests */ = {
+		38A812E91BC3274000BB6A63 = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 38A812F91BC3274000BB6A63 /* Build configuration list for PBXNativeTarget "JKAppsFeedbackUIProviderUITests" */;
+			buildConfigurationList = 38A812F91BC3274000BB6A63;
 			buildPhases = (
-				38A812E61BC3274000BB6A63 /* Sources */,
-				38A812E71BC3274000BB6A63 /* Frameworks */,
-				38A812E81BC3274000BB6A63 /* Resources */,
+				38A812E61BC3274000BB6A63,
+				38A812E71BC3274000BB6A63,
+				38A812E81BC3274000BB6A63,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				38A812EC1BC3274000BB6A63 /* PBXTargetDependency */,
+				38A812EC1BC3274000BB6A63,
 			);
 			name = JKAppsFeedbackUIProviderUITests;
 			productName = JKAppsFeedbackUIProviderUITests;
-			productReference = 38A812EA1BC3274000BB6A63 /* JKAppsFeedbackUIProviderUITests.xctest */;
+			productReference = 38A812EA1BC3274000BB6A63;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		38A812BE1BC3274000BB6A63 /* Project object */ = {
+		38A812BE1BC3274000BB6A63 = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0700;
@@ -278,7 +512,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 38A812C11BC3274000BB6A63 /* Build configuration list for PBXProject "JKAppsFeedbackUIProvider" */;
+			buildConfigurationList = 38A812C11BC3274000BB6A63;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -287,38 +521,40 @@
 				Base,
 			);
 			mainGroup = 38A812BD1BC3274000BB6A63;
-			productRefGroup = 38A812C71BC3274000BB6A63 /* Products */;
+			productRefGroup = 38A812C71BC3274000BB6A63;
 			projectDirPath = "";
+			projectReferences = (
+			);
 			projectRoot = "";
 			targets = (
-				38A812C51BC3274000BB6A63 /* JKAppsFeedbackUIProvider */,
-				38A812DE1BC3274000BB6A63 /* JKAppsFeedbackUIProviderTests */,
-				38A812E91BC3274000BB6A63 /* JKAppsFeedbackUIProviderUITests */,
+				38A812C51BC3274000BB6A63,
+				38A812DE1BC3274000BB6A63,
+				38A812E91BC3274000BB6A63,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		38A812C41BC3274000BB6A63 /* Resources */ = {
+		38A812C41BC3274000BB6A63 = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				38A812D91BC3274000BB6A63 /* LaunchScreen.storyboard in Resources */,
-				38A812D61BC3274000BB6A63 /* Assets.xcassets in Resources */,
-				38F8BA631BC47DE00043D3AC /* IMG_20150929_220147.jpg in Resources */,
-				380880121BC36AF000C1A649 /* boiling.jpg in Resources */,
-				38A812D41BC3274000BB6A63 /* Main.storyboard in Resources */,
+				38A812D91BC3274000BB6A63,
+				38A812D61BC3274000BB6A63,
+				38F8BA631BC47DE00043D3AC,
+				380880121BC36AF000C1A649,
+				38A812D41BC3274000BB6A63,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		38A812DD1BC3274000BB6A63 /* Resources */ = {
+		38A812DD1BC3274000BB6A63 = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		38A812E81BC3274000BB6A63 /* Resources */ = {
+		38A812E81BC3274000BB6A63 = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -328,7 +564,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0B2BB42F3A01A849E4075930 /* Check Pods Manifest.lock */ = {
+		0B2BB42F3A01A849E4075930 = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -343,7 +579,7 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		1683900DBDCD4DD4F49A678C /* Copy Pods Resources */ = {
+		1683900DBDCD4DD4F49A678C = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -361,72 +597,74 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		38A812C21BC3274000BB6A63 /* Sources */ = {
+		38A812C21BC3274000BB6A63 = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				38A812D11BC3274000BB6A63 /* ViewController.m in Sources */,
-				38F8BA6C1BC4B1BA0043D3AC /* JKFeedbackInfo.m in Sources */,
-				38A813051BC32A4A00BB6A63 /* JKAppsFeedbackProviderViewController.m in Sources */,
-				38A812CE1BC3274000BB6A63 /* AppDelegate.m in Sources */,
-				38A813081BC32CE400BB6A63 /* JKFeedbackProviderWebRequestManager.m in Sources */,
-				38A812CB1BC3274000BB6A63 /* main.m in Sources */,
-				380880101BC35E1300C1A649 /* JKFeedbackProviderVersionInfo.m in Sources */,
+				38A812D11BC3274000BB6A63,
+				38F8BA6C1BC4B1BA0043D3AC,
+				38A813051BC32A4A00BB6A63,
+				38A812CE1BC3274000BB6A63,
+				38A813081BC32CE400BB6A63,
+				38A812CB1BC3274000BB6A63,
+				380880101BC35E1300C1A649,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		38A812DB1BC3274000BB6A63 /* Sources */ = {
+		38A812DB1BC3274000BB6A63 = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				38A812E41BC3274000BB6A63 /* JKAppsFeedbackUIProviderTests.m in Sources */,
+				38A812E41BC3274000BB6A63,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		38A812E61BC3274000BB6A63 /* Sources */ = {
+		38A812E61BC3274000BB6A63 = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				38A812EF1BC3274000BB6A63 /* JKAppsFeedbackUIProviderUITests.m in Sources */,
+				38A812EF1BC3274000BB6A63,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		38A812E11BC3274000BB6A63 /* PBXTargetDependency */ = {
+		38A812E11BC3274000BB6A63 = {
 			isa = PBXTargetDependency;
-			target = 38A812C51BC3274000BB6A63 /* JKAppsFeedbackUIProvider */;
-			targetProxy = 38A812E01BC3274000BB6A63 /* PBXContainerItemProxy */;
+			target = 38A812C51BC3274000BB6A63;
+			targetProxy = 38A812E01BC3274000BB6A63;
 		};
-		38A812EC1BC3274000BB6A63 /* PBXTargetDependency */ = {
+		38A812EC1BC3274000BB6A63 = {
 			isa = PBXTargetDependency;
-			target = 38A812C51BC3274000BB6A63 /* JKAppsFeedbackUIProvider */;
-			targetProxy = 38A812EB1BC3274000BB6A63 /* PBXContainerItemProxy */;
+			target = 38A812C51BC3274000BB6A63;
+			targetProxy = 38A812EB1BC3274000BB6A63;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		38A812D21BC3274000BB6A63 /* Main.storyboard */ = {
+		38A812D21BC3274000BB6A63 = {
 			isa = PBXVariantGroup;
 			children = (
-				38A812D31BC3274000BB6A63 /* Base */,
+				38A812D31BC3274000BB6A63,
 			);
 			name = Main.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
-		38A812D71BC3274000BB6A63 /* LaunchScreen.storyboard */ = {
+		38A812D71BC3274000BB6A63 = {
 			isa = PBXVariantGroup;
 			children = (
-				38A812D81BC3274000BB6A63 /* Base */,
+				38A812D81BC3274000BB6A63,
 			);
 			name = LaunchScreen.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		38A812F11BC3274000BB6A63 /* Debug */ = {
+		38A812F11BC3274000BB6A63 = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -470,7 +708,7 @@
 			};
 			name = Debug;
 		};
-		38A812F21BC3274000BB6A63 /* Release */ = {
+		38A812F21BC3274000BB6A63 = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -508,9 +746,9 @@
 			};
 			name = Release;
 		};
-		38A812F41BC3274000BB6A63 /* Debug */ = {
+		38A812F41BC3274000BB6A63 = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EDF0DE00667FCF3362254FEF /* Pods.debug.xcconfig */;
+			baseConfigurationReference = EDF0DE00667FCF3362254FEF;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = JKAppsFeedbackUIProvider/Info.plist;
@@ -522,9 +760,9 @@
 			};
 			name = Debug;
 		};
-		38A812F51BC3274000BB6A63 /* Release */ = {
+		38A812F51BC3274000BB6A63 = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5C6DB05FE04C6A07A3D29718 /* Pods.release.xcconfig */;
+			baseConfigurationReference = 5C6DB05FE04C6A07A3D29718;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = JKAppsFeedbackUIProvider/Info.plist;
@@ -536,7 +774,7 @@
 			};
 			name = Release;
 		};
-		38A812F71BC3274000BB6A63 /* Debug */ = {
+		38A812F71BC3274000BB6A63 = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -548,7 +786,7 @@
 			};
 			name = Debug;
 		};
-		38A812F81BC3274000BB6A63 /* Release */ = {
+		38A812F81BC3274000BB6A63 = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -560,7 +798,7 @@
 			};
 			name = Release;
 		};
-		38A812FA1BC3274000BB6A63 /* Debug */ = {
+		38A812FA1BC3274000BB6A63 = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				INFOPLIST_FILE = JKAppsFeedbackUIProviderUITests/Info.plist;
@@ -572,7 +810,7 @@
 			};
 			name = Debug;
 		};
-		38A812FB1BC3274000BB6A63 /* Release */ = {
+		38A812FB1BC3274000BB6A63 = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				INFOPLIST_FILE = JKAppsFeedbackUIProviderUITests/Info.plist;
@@ -587,43 +825,43 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		38A812C11BC3274000BB6A63 /* Build configuration list for PBXProject "JKAppsFeedbackUIProvider" */ = {
+		38A812C11BC3274000BB6A63 = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				38A812F11BC3274000BB6A63 /* Debug */,
-				38A812F21BC3274000BB6A63 /* Release */,
+				38A812F11BC3274000BB6A63,
+				38A812F21BC3274000BB6A63,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		38A812F31BC3274000BB6A63 /* Build configuration list for PBXNativeTarget "JKAppsFeedbackUIProvider" */ = {
+		38A812F31BC3274000BB6A63 = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				38A812F41BC3274000BB6A63 /* Debug */,
-				38A812F51BC3274000BB6A63 /* Release */,
+				38A812F41BC3274000BB6A63,
+				38A812F51BC3274000BB6A63,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		38A812F61BC3274000BB6A63 /* Build configuration list for PBXNativeTarget "JKAppsFeedbackUIProviderTests" */ = {
+		38A812F61BC3274000BB6A63 = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				38A812F71BC3274000BB6A63 /* Debug */,
-				38A812F81BC3274000BB6A63 /* Release */,
+				38A812F71BC3274000BB6A63,
+				38A812F81BC3274000BB6A63,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		38A812F91BC3274000BB6A63 /* Build configuration list for PBXNativeTarget "JKAppsFeedbackUIProviderUITests" */ = {
+		38A812F91BC3274000BB6A63 = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				38A812FA1BC3274000BB6A63 /* Debug */,
-				38A812FB1BC3274000BB6A63 /* Release */,
+				38A812FA1BC3274000BB6A63,
+				38A812FB1BC3274000BB6A63,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 38A812BE1BC3274000BB6A63 /* Project object */;
+	rootObject = 38A812BE1BC3274000BB6A63;
 }

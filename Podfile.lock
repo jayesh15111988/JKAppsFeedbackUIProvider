@@ -26,7 +26,6 @@ PODS:
   - EDColor (1.0.0)
   - JKAutolayoutReadyScrollView (0.2):
     - TPKeyboardAvoiding (~> 1.2)
-  - KLCPopup (1.0)
   - MJPopupViewController (0.4)
   - ReactiveCocoa (2.5):
     - ReactiveCocoa/UI (= 2.5)
@@ -42,7 +41,6 @@ DEPENDENCIES:
   - EDColor
   - JKAutolayoutReadyScrollView (from `git@github.com:jayesh15111988/JKAutolayoutReadyScrollView.git`,
     branch `master`)
-  - KLCPopup (~> 1.0)
   - MJPopupViewController
 
 EXTERNAL SOURCES:
@@ -60,7 +58,6 @@ SPEC CHECKSUMS:
   AFNetworking-RACExtensions: a043c6b492fa892395ceb9d20bc4c94e96e08a57
   EDColor: c83f9a61f9f9b3c23d541f1feb561558e29cb088
   JKAutolayoutReadyScrollView: bd0a1cabf4b80c162a3646858174a91bf2b7c92c
-  KLCPopup: 76c5a19227977f1e53d85236f9ef42257c168d98
   MJPopupViewController: e9ad553a3145eb8126ba2748e872ae7fb25cc605
   ReactiveCocoa: e2db045570aa97c695e7aa97c2bcab222ae51f4a
   TPKeyboardAvoiding: ff1ee4e5a5a0c119b965552af8f183868ea20207
