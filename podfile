@@ -1,0 +1,5 @@
+pod 'AFNetworking-RACExtensions', '~> 0.1'
+pod 'KLCPopup', '~> 1.0'
+pod 'JKAutolayoutReadyScrollView', :git => 'git@github.com:jayesh15111988/JKAutolayoutReadyScrollView.git' , :branch => 'master'
+pod 'EDColor'
+
