@@ -10,6 +10,7 @@
 #import <EDColor/EDColor.h>
 #import <AFNetworking-RACExtensions/AFHTTPRequestOperationManager+RACSupport.h>
 #import "JKFeedbackProviderVersionInfo.h"
+#import "JKFeedbackInfo.h"
 #import "JKFeedbackProviderWebRequestManager.h"
 #import "JKAppsFeedbackProviderViewController.h"
 
@@ -23,6 +24,7 @@
 @property (nonatomic, strong) UITextView* commentsTextView;
 @property (nonatomic, strong) UITextView* improvementsTextView;
 @property (nonatomic, strong) NSDateFormatter* dateFormatter;
+@property (nonatomic, strong) UIColor* feedbackViewBackgroundColor;
 
 @property (nonatomic, strong) FeedbackSubmissionComplete feedbackSubmissionCompletionBlock;
 @property (nonatomic, strong) FeedbackSubmissionError feedbackSubmissionErrorBlock;
@@ -31,15 +33,13 @@
 
 @implementation JKAppsFeedbackProviderViewController
 
-- (instancetype)initWithApplicationName:(NSString*)appName
-                        andAppLogoImage:(UIImage*)appLogoImage
-   andFeedbackSubmissionCompletionBlock:(FeedbackSubmissionComplete)submissionCompletionBlock
-        andFeedbackSubmissionErrorBlock:(FeedbackSubmissionError)submissionErrorBlock {
+- (instancetype)initWithFeedbackInfoObject:(JKFeedbackInfo*)feedbackInfoObject {
     if (self = [super init]) {
-        _appName = appName;
-        _appLogoImage = appLogoImage;
-        _feedbackSubmissionCompletionBlock = submissionCompletionBlock;
-        _feedbackSubmissionErrorBlock = submissionErrorBlock;
+        _appName = feedbackInfoObject.appName;
+        _appLogoImage = feedbackInfoObject.appLogoImage;
+        _feedbackViewBackgroundColor = feedbackInfoObject.feedbackViewBackgroundColor;
+        _feedbackSubmissionCompletionBlock = feedbackInfoObject.feedbackSubmissionCompletionBlock;
+        _feedbackSubmissionErrorBlock = feedbackInfoObject.feedbackSubmissionErrorBlock;
         _dateFormatter = [NSDateFormatter new];
         [_dateFormatter setDateFormat:@"EEEE, dd MMMM yyyy hh:mm a"];
     }
@@ -49,7 +49,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.stepValue = 1;
-    UIColor* generalTextColor = [UIColor colorWithCrayola:@"Red-Violet"];
+    UIColor* generalTextColor = [UIColor blackColor];
     UIToolbar* toolbar = [[UIToolbar alloc] initWithFrame:CGRectMake (0, 0, self.view.frame.size.width, 44)];
     UIBarButtonItem* flexibleSpace =
         [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:nil action:nil];
@@ -57,11 +57,11 @@
                                                                                 target:self
                                                                                 action:@selector (doneButtonPressed)];
     toolbar.items = @[ flexibleSpace, doneButton ];
-    self.view.backgroundColor = [UIColor colorWithCrayola:@"Mango Tango"];
+    self.view.backgroundColor = self.feedbackViewBackgroundColor;
     ScrollViewAutolayoutCreator* autolayoutEquippedScrollView =
         [[ScrollViewAutolayoutCreator alloc] initWithSuperView:self.view andHorizontalScrollingEnabled:NO];
 
-    UIFont* generalHeaderFont = [UIFont fontWithName:@"HelveticaNeue-Bold" size:17];
+    UIFont* generalHeaderFont = [UIFont fontWithName:@"HelveticaNeue-Medium" size:17];
     UIView* scrollViewContent = autolayoutEquippedScrollView.contentView;
 
     UIImageView* appLogoView = [UIImageView new];
@@ -171,9 +171,9 @@
                                                           attribute:NSLayoutAttributeNotAnAttribute
                                                          multiplier:1.0
                                                            constant:100]];
-    [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-[appLogoView(100)]"
+    [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-doublePadding-[appLogoView(100)]"
                                                                       options:kNilOptions
-                                                                      metrics:nil
+                                                                      metrics:metrics
                                                                         views:views]];
 
     [self.view addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-padding-[appNameLabel]-padding-|"

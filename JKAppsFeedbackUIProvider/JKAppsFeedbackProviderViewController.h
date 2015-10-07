@@ -7,14 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
-
-typedef void (^FeedbackSubmissionComplete)(id serverResponse);
-typedef void (^FeedbackSubmissionError)(NSError* error);
+@class JKFeedbackInfo;
 
 @interface JKAppsFeedbackProviderViewController : UIViewController
 
 @property (nonatomic, strong) NSString* feedbackURLString;
 
-- (instancetype)initWithApplicationName:(NSString*)appName andAppLogoImage:(UIImage*)appLogoImage andFeedbackSubmissionCompletionBlock:(FeedbackSubmissionComplete)submissionCompletionBlock andFeedbackSubmissionErrorBlock:(FeedbackSubmissionError)submissionErrorBlock;
+- (instancetype)initWithFeedbackInfoObject:(JKFeedbackInfo*)feedbackInfoObject;
 
 @end

@@ -18,14 +18,6 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    JKAppsFeedbackProviderViewController* feedbackController = [[JKAppsFeedbackProviderViewController alloc] initWithApplicationName:@"My Awesome application" andAppLogoImage:[UIImage imageNamed:@"IMG_20150929_220147.jpg"] andFeedbackSubmissionCompletionBlock:^(id serverResponse) {
-        
-    } andFeedbackSubmissionErrorBlock:^(NSError *error) {
-        
-    }];
-    self.window.bounds = [UIScreen mainScreen].bounds;
-    [self.window makeKeyAndVisible];
-    self.window.rootViewController = feedbackController;
     return YES;
 }
 

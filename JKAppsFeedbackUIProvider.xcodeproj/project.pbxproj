@@ -20,6 +20,7 @@
 		38A813051BC32A4A00BB6A63 /* JKAppsFeedbackProviderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38A813041BC32A4A00BB6A63 /* JKAppsFeedbackProviderViewController.m */; settings = {ASSET_TAGS = (); }; };
 		38A813081BC32CE400BB6A63 /* JKFeedbackProviderWebRequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 38A813071BC32CE400BB6A63 /* JKFeedbackProviderWebRequestManager.m */; settings = {ASSET_TAGS = (); }; };
 		38F8BA631BC47DE00043D3AC /* IMG_20150929_220147.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 38F8BA621BC47DE00043D3AC /* IMG_20150929_220147.jpg */; settings = {ASSET_TAGS = (); }; };
+		38F8BA6C1BC4B1BA0043D3AC /* JKFeedbackInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 38F8BA6B1BC4B1BA0043D3AC /* JKFeedbackInfo.m */; settings = {ASSET_TAGS = (); }; };
 		E0324471E7BF81CE8507A30B /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C88DADF98A6DBD42C38B351 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -66,6 +67,8 @@
 		38A813061BC32CE400BB6A63 /* JKFeedbackProviderWebRequestManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKFeedbackProviderWebRequestManager.h; sourceTree = "<group>"; };
 		38A813071BC32CE400BB6A63 /* JKFeedbackProviderWebRequestManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKFeedbackProviderWebRequestManager.m; sourceTree = "<group>"; };
 		38F8BA621BC47DE00043D3AC /* IMG_20150929_220147.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_20150929_220147.jpg; sourceTree = "<group>"; };
+		38F8BA6A1BC4B1BA0043D3AC /* JKFeedbackInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKFeedbackInfo.h; sourceTree = "<group>"; };
+		38F8BA6B1BC4B1BA0043D3AC /* JKFeedbackInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKFeedbackInfo.m; sourceTree = "<group>"; };
 		5C6DB05FE04C6A07A3D29718 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		EDF0DE00667FCF3362254FEF /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -121,6 +124,7 @@
 		38A812C81BC3274000BB6A63 /* JKAppsFeedbackUIProvider */ = {
 			isa = PBXGroup;
 			children = (
+				38F8BA6D1BC4B4EE0043D3AC /* Classes */,
 				38F8BA621BC47DE00043D3AC /* IMG_20150929_220147.jpg */,
 				38A812CC1BC3274000BB6A63 /* AppDelegate.h */,
 				38A812CD1BC3274000BB6A63 /* AppDelegate.m */,
@@ -132,12 +136,6 @@
 				38A812D71BC3274000BB6A63 /* LaunchScreen.storyboard */,
 				38A812DA1BC3274000BB6A63 /* Info.plist */,
 				38A812C91BC3274000BB6A63 /* Supporting Files */,
-				38A813031BC32A4A00BB6A63 /* JKAppsFeedbackProviderViewController.h */,
-				38A813041BC32A4A00BB6A63 /* JKAppsFeedbackProviderViewController.m */,
-				38A813061BC32CE400BB6A63 /* JKFeedbackProviderWebRequestManager.h */,
-				38A813071BC32CE400BB6A63 /* JKFeedbackProviderWebRequestManager.m */,
-				3808800E1BC35E1300C1A649 /* JKFeedbackProviderVersionInfo.h */,
-				3808800F1BC35E1300C1A649 /* JKFeedbackProviderVersionInfo.m */,
 			);
 			path = JKAppsFeedbackUIProvider;
 			sourceTree = "<group>";
@@ -166,6 +164,21 @@
 				38A812F01BC3274000BB6A63 /* Info.plist */,
 			);
 			path = JKAppsFeedbackUIProviderUITests;
+			sourceTree = "<group>";
+		};
+		38F8BA6D1BC4B4EE0043D3AC /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				38F8BA6A1BC4B1BA0043D3AC /* JKFeedbackInfo.h */,
+				38F8BA6B1BC4B1BA0043D3AC /* JKFeedbackInfo.m */,
+				38A813031BC32A4A00BB6A63 /* JKAppsFeedbackProviderViewController.h */,
+				38A813041BC32A4A00BB6A63 /* JKAppsFeedbackProviderViewController.m */,
+				38A813061BC32CE400BB6A63 /* JKFeedbackProviderWebRequestManager.h */,
+				38A813071BC32CE400BB6A63 /* JKFeedbackProviderWebRequestManager.m */,
+				3808800E1BC35E1300C1A649 /* JKFeedbackProviderVersionInfo.h */,
+				3808800F1BC35E1300C1A649 /* JKFeedbackProviderVersionInfo.m */,
+			);
+			name = Classes;
 			sourceTree = "<group>";
 		};
 		ABA08BB8B3F3DF34397440ED /* Frameworks */ = {
@@ -353,6 +366,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				38A812D11BC3274000BB6A63 /* ViewController.m in Sources */,
+				38F8BA6C1BC4B1BA0043D3AC /* JKFeedbackInfo.m in Sources */,
 				38A813051BC32A4A00BB6A63 /* JKAppsFeedbackProviderViewController.m in Sources */,
 				38A812CE1BC3274000BB6A63 /* AppDelegate.m in Sources */,
 				38A813081BC32CE400BB6A63 /* JKFeedbackProviderWebRequestManager.m in Sources */,
@@ -500,9 +514,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = JKAppsFeedbackUIProvider/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jayeshKawli.JKAppsFeedbackUIProvider;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -512,9 +528,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = JKAppsFeedbackUIProvider/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jayeshKawli.JKAppsFeedbackUIProvider;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
