@@ -10,13 +10,11 @@
 
 @implementation JKFeedbackInfo
 
-- (instancetype)initWithApplogoImage:(UIImage*)logoImage andAppName:(NSString*)appName andFeedbackViewBackgorundColor:(UIColor*)backgroundColor andFeedbackCompletionBlock:(FeedbackSubmissionComplete)completionBlock andFeedbackErrorBlock:(FeedbackSubmissionError)errorBlock {
+- (instancetype)initWithApplogoImage:(UIImage*)logoImage andAppName:(NSString*)appName andFeedbackViewBackgorundColor:(UIColor*)backgroundColor {
     if (self = [super init]) {
         _appLogoImage = logoImage;
         _appName = appName;
         _feedbackViewBackgroundColor = backgroundColor;
-        _feedbackSubmissionCompletionBlock = completionBlock;
-        _feedbackSubmissionErrorBlock = errorBlock;
     }
     return self;
 }

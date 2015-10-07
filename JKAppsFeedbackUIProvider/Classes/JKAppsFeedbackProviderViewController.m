@@ -33,13 +33,13 @@
 
 @implementation JKAppsFeedbackProviderViewController
 
-- (instancetype)initWithFeedbackInfoObject:(JKFeedbackInfo*)feedbackInfoObject {
+- (instancetype)initWithFeedbackInfoObject:(JKFeedbackInfo*)feedbackInfoObject andFeedbackCompletionBlock:(FeedbackSubmissionComplete)completionBlock andFeedbackErrorBlock:(FeedbackSubmissionError)errorBlock{
     if (self = [super init]) {
         _appName = feedbackInfoObject.appName;
         _appLogoImage = feedbackInfoObject.appLogoImage;
         _feedbackViewBackgroundColor = feedbackInfoObject.feedbackViewBackgroundColor;
-        _feedbackSubmissionCompletionBlock = feedbackInfoObject.feedbackSubmissionCompletionBlock;
-        _feedbackSubmissionErrorBlock = feedbackInfoObject.feedbackSubmissionErrorBlock;
+        _feedbackSubmissionCompletionBlock = completionBlock;
+        _feedbackSubmissionErrorBlock = errorBlock;
         _dateFormatter = [NSDateFormatter new];
         [_dateFormatter setDateFormat:@"EEEE, dd MMMM yyyy hh:mm a"];
     }

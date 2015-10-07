@@ -9,17 +9,12 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-typedef void (^FeedbackSubmissionComplete)(id serverResponse);
-typedef void (^FeedbackSubmissionError)(NSError* error);
-
 @interface JKFeedbackInfo : NSObject
 
-- (instancetype)initWithApplogoImage:(UIImage*)logoImage andAppName:(NSString*)appName andFeedbackViewBackgorundColor:(UIColor*)backgroundColor andFeedbackCompletionBlock:(FeedbackSubmissionComplete)completionBlock andFeedbackErrorBlock:(FeedbackSubmissionError)errorBlock;
+- (instancetype)initWithApplogoImage:(UIImage*)logoImage andAppName:(NSString*)appName andFeedbackViewBackgorundColor:(UIColor*)backgroundColor;
 
 @property (nonatomic, strong, readonly) UIImage* appLogoImage;
 @property (nonatomic, copy, readonly) NSString* appName;
 @property (nonatomic, strong, readonly) UIColor* feedbackViewBackgroundColor;
-@property (nonatomic, strong) FeedbackSubmissionComplete feedbackSubmissionCompletionBlock;
-@property (nonatomic, strong) FeedbackSubmissionError feedbackSubmissionErrorBlock;
 
 @end
