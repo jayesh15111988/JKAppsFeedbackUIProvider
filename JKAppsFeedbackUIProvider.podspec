@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "JKAppsFeedbackUIProvider"
-  s.version          = "0.2"
+  s.version          = "0.3"
   s.summary          = "A custom library to allow users to submit feedback for any arbitrary app"
   s.description      = ""
   s.homepage         = "https://github.com/jayesh15111988/JKAppsFeedbackUIProvider.git"
