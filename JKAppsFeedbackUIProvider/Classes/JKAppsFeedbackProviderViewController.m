@@ -25,6 +25,7 @@
 @property (nonatomic, strong) UITextView* improvementsTextView;
 @property (nonatomic, strong) NSDateFormatter* dateFormatter;
 @property (nonatomic, strong) UIColor* feedbackViewBackgroundColor;
+@property (nonatomic, strong) UIActivityIndicatorView* activityIndicator;
 
 @property (nonatomic, strong) FeedbackSubmissionComplete feedbackSubmissionCompletionBlock;
 @property (nonatomic, strong) FeedbackSubmissionError feedbackSubmissionErrorBlock;
@@ -42,6 +43,7 @@
         _feedbackSubmissionErrorBlock = errorBlock;
         _dateFormatter = [NSDateFormatter new];
         [_dateFormatter setDateFormat:@"EEEE, dd MMMM yyyy hh:mm a"];
+        _feedbackURLString = @"http://jayeshkawli.com/iOSAppsFeedback/iOSAppsFeedback.php";
     }
     return self;
 }
@@ -61,9 +63,22 @@
     ScrollViewAutolayoutCreator* autolayoutEquippedScrollView =
         [[ScrollViewAutolayoutCreator alloc] initWithSuperView:self.view andHorizontalScrollingEnabled:NO];
 
+    self.activityIndicator = [UIActivityIndicatorView new];
+    self.activityIndicator.translatesAutoresizingMaskIntoConstraints = NO;
+    self.activityIndicator.activityIndicatorViewStyle = UIActivityIndicatorViewStyleWhiteLarge;
+    self.activityIndicator.color = [UIColor blackColor];
+    [self.activityIndicator hidesWhenStopped];
+    
     UIFont* generalHeaderFont = [UIFont fontWithName:@"HelveticaNeue-Medium" size:17];
     UIView* scrollViewContent = autolayoutEquippedScrollView.contentView;
 
+    
+    [scrollViewContent addSubview:self.activityIndicator];
+    
+    [self.view addConstraint:[NSLayoutConstraint constraintWithItem:self.activityIndicator attribute:NSLayoutAttributeCenterX relatedBy:NSLayoutRelationEqual toItem:scrollViewContent attribute:NSLayoutAttributeCenterX multiplier:1.0 constant:0.0]];
+    [self.view addConstraint:[NSLayoutConstraint constraintWithItem:self.activityIndicator attribute:NSLayoutAttributeCenterY relatedBy:NSLayoutRelationEqual toItem:scrollViewContent attribute:NSLayoutAttributeCenterY multiplier:1.0 constant:0.0]];
+    
+    
     UIImageView* appLogoView = [UIImageView new];
     appLogoView.translatesAutoresizingMaskIntoConstraints = NO;
     appLogoView.contentMode = UIViewContentModeScaleAspectFit;
@@ -148,7 +163,7 @@
     [submitButton setTitle:@"Submit Feedback" forState:UIControlStateNormal];
     [submitButton setBackgroundColor:[UIColor colorWithCrayola:@"Pacific Blue"]];
     [submitButton setTitleColor:[UIColor colorWithCrayola:@"Pine"] forState:UIControlStateNormal];
-    [submitButton addTarget:self action:@selector (sendFeedback) forControlEvents:UIControlEventTouchUpInside];
+    [submitButton addTarget:self action:@selector (sendFeedback:) forControlEvents:UIControlEventTouchUpInside];
     [scrollViewContent addSubview:submitButton];
 
     NSDictionary* metrics = @{ @"padding" : @(10), @"doublePadding" : @(20) };
@@ -312,10 +327,9 @@
                                                  views:views]];
 }
 
-- (void)sendFeedback {
-    if (!self.feedbackURLString) {
-        self.feedbackURLString = @"http://jayeshkawli.com/iOSAppsFeedback/iOSAppsFeedback.php";
-    }
+- (void)sendFeedback:(UIButton*)sender {
+    sender.enabled = NO;
+    [self.activityIndicator startAnimating];
 
     NSString* currentDateAndTimeString = [_dateFormatter stringFromDate:[NSDate date]];
     NSDictionary* feedbackPayload = @{
@@ -332,12 +346,13 @@
           rac_POST:self.feedbackURLString
         parameters:feedbackPayload] subscribeNext:^(id x) {
       NSDictionary* response = [x first];
-
+        [self.activityIndicator stopAnimating];
       if ([response[@"success"] boolValue]) {
           if (self.feedbackSubmissionCompletionBlock) {
               self.feedbackSubmissionCompletionBlock (response);
           }
       } else {
+          sender.enabled = YES;
           NSDictionary* userInfo =
               @{ NSLocalizedDescriptionKey : NSLocalizedString (@"Failed to send an email with unknown error.", nil) };
           NSError* error =
@@ -348,6 +363,8 @@
           }
       }
     } error:^(NSError* error) {
+        [self.activityIndicator stopAnimating];
+        sender.enabled = YES;
       if (self.feedbackSubmissionErrorBlock) {
           self.feedbackSubmissionErrorBlock (error);
       }
