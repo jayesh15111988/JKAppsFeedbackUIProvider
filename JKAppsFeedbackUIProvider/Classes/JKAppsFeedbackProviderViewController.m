@@ -70,6 +70,7 @@
     [self.activityIndicator hidesWhenStopped];
     
     UIFont* generalHeaderFont = [UIFont fontWithName:@"HelveticaNeue-Medium" size:17];
+    UIFont* generalBodyFont = [UIFont fontWithName:@"HelveticaNeue-Medium" size:15];
     UIView* scrollViewContent = autolayoutEquippedScrollView.contentView;
 
     
@@ -110,6 +111,7 @@
     self.commentsTextView.textAlignment = NSTextAlignmentLeft;
     self.commentsTextView.backgroundColor = [UIColor colorWithCrayola:@"Aquamarine"];
     self.commentsTextView.inputAccessoryView = toolbar;
+    self.commentsTextView.font = generalBodyFont;
     [commentsView addSubview:self.commentsTextView];
 
     UIView* imporvementsView = [UIView new];
@@ -129,6 +131,7 @@
     self.improvementsTextView.textAlignment = NSTextAlignmentLeft;
     self.improvementsTextView.backgroundColor = [UIColor colorWithCrayola:@"Aquamarine"];
     self.improvementsTextView.inputAccessoryView = toolbar;
+    self.improvementsTextView.font = generalBodyFont;
     [imporvementsView addSubview:self.improvementsTextView];
 
     UIView* ratingsView = [UIView new];
