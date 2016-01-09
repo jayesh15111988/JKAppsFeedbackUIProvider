@@ -1,3 +1,6 @@
+platform :ios, '7.0'
+use_frameworks!
+
 pod 'AFNetworking-RACExtensions', '~> 0.1'
 pod 'JKAutolayoutReadyScrollView', :git => 'git@github.com:jayesh15111988/JKAutolayoutReadyScrollView.git' , :branch => 'master'
 pod 'EDColor'

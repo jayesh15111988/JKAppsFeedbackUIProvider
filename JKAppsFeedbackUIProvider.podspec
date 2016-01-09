@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "JKAppsFeedbackUIProvider"
-  s.version          = "0.5"
+  s.version          = "0.7"
   s.summary          = "A custom library to allow users to submit feedback for any arbitrary app"
   s.description      = ""
   s.homepage         = "https://github.com/jayesh15111988/JKAppsFeedbackUIProvider.git"
@@ -15,4 +15,5 @@ Pod::Spec.new do |s|
   s.source_files = 'JKAppsFeedbackUIProvider/Classes/*.{h,m}'
   s.dependency 'AFNetworking-RACExtensions', '~> 0.1'
   s.dependency 'EDColor'
+  s.dependency 'MJPopupViewController'
 end
